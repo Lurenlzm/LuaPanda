@@ -69,6 +69,9 @@
 		"breakpoints": [
 			{
 				"language": "lua"
+			},
+			{
+				"language": "teal"
 			}
 		],
 		"commands": [
@@ -305,6 +308,20 @@
 						"connectionPort": 8818,
 						"stopOnEntry": true,
 						"useCHook": true,
+						"logLevel": 1
+					},
+					{
+						"type": "lua",
+						"request": "launch",
+						"name": "LuaPandaForTeal",
+						"program": "",
+						"cwd": "${workspaceFolder}",
+						"luaFileExtension": "tl",
+						"connectionPort": 8818,
+						"pathCaseSensitivity": true,
+						"stopOnEntry": true,
+						"useCHook": true,
+						"autoPathMode": true,
 						"logLevel": 1
 					}
 				]
